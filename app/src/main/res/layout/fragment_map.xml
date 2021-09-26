@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BAE18D"
-    tools:context=".MapFragment">
+    tools:context=".fragments.MapFragment">
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"

@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.pprodev.werami.HomeFragment"
+        android:name="com.pprodev.werami.fragments.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/mapFragment"
-        android:name="com.pprodev.werami.MapFragment"
+        android:name="com.pprodev.werami.fragments.MapFragment"
         android:label="Map"
         tools:layout="@layout/fragment_map" />
 </navigation>
