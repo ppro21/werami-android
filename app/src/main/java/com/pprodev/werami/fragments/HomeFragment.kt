@@ -5,6 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.navigation.fragment.findNavController
+import com.pprodev.werami.R
 import com.pprodev.werami.databinding.FragmentHomeBinding
 
 
@@ -20,6 +23,8 @@ class HomeFragment : Fragment() {
         super.onResume()
     }
 
+    private val viewModel: SharedViewModel by activityViewModels()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -29,7 +34,10 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
 
-
+        binding.btnGoToMap.setOnClickListener {
+            viewModel.sendGreeting()
+            findNavController().navigate(R.id.action_homeFragment_to_mapFragment)
+        }
 
         return view
     }
