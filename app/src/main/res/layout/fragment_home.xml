@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A0BDE1"
+    android:orientation="vertical"
+    tools:context=".fragments.HomeFragment">
+
+    <TextView
+        android:id="@+id/tvHomeHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Home Fragment"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnGoToMap"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="go to map" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
